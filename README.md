@@ -3,6 +3,8 @@ This is a dead simple library that serves the purpose of providing values, no ma
 
 This library is part of the subgine family.
 
+[![Build Status](https://webapi.biicode.com/v1/badges/gracicot/gracicot/sbg-provider/master)](https://www.biicode.com/gracicot/sbg-provider) 
+
 ### How?
 
 It behaves like a functor, but it doesn't break your API! You can keep sending values as parameters, but you will be able to send function and functors too!
