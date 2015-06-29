@@ -1,0 +1,21 @@
+.svn
+.svn/
+build/
+*.kdev4
+*~
+.*
+!/.gitignore
+
+
+# netbeans
+
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+libsubgine-collision.so
+libsubgine-particle.so
+libsubgine-physic.so
+libsubgine-system.so
+nbproject/
