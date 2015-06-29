@@ -1,6 +1,8 @@
 # sbg-provider
 This is a dead simple library that serves the purpose of providing values, no matter if it comes from a value, a functor, a lamda of a function pointer. The advantage of using this library is it breaks no API (in most cases).
 
+This library is part of the subgine family.
+
 ### How?
 
 It behaves like a functor, but it doesn't break your API! You can keep sending values as parameters, but you will be able to send function and functors too!
