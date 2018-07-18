@@ -56,7 +56,7 @@ Here's some good new! It work great with returns too:
 
 Now with Provider:
     
-    std::Provider<int> makeSomething(bool sw) {
+    sbg::Provider<int> makeSomething(bool sw) {
         if (sw) {
             // getTicks is a function that returns a value by the time
             // This value changes, it's okay to return a function
