@@ -10,10 +10,8 @@ This library is part of the subgine family.
 It behaves like a functor, but it doesn't break your API! You can keep sending values as parameters, but you will be able to send function and functors too!
 Take this example without Provider:
     
-    using namespace std;
-    
     void displayMe(double d) {
-        cout << d << endl;
+        std::cout << d << std::endl;
     }
     
     int main() {
@@ -28,11 +26,8 @@ Take this example without Provider:
     
 Now, with Provider:
 
-    using namespace std;
-    using namespace sbg;
-    
-    void displayMe(Provider<double> d) {
-        cout << d() << endl;
+    void displayMe(sbg::Provider<double> d) {
+        std::cout << d() << std::endl;
     }
     
     int main() {
@@ -48,10 +43,7 @@ Now, with Provider:
     
 Here's some good new! It work great with returns too:
 
-    
-    using namespace std;
-    
-    function<int()> makeSomething(bool sw) {
+    std::function<int()> makeSomething(bool sw) {
         if (sw) {
             // getTicks is a function that returns a value by the time
             // This value changes, it's okay to return a function
@@ -64,10 +56,7 @@ Here's some good new! It work great with returns too:
 
 Now with Provider:
     
-    using namespace std;
-    using namespace sbg;
-    
-    Provider<int> makeSomething(bool sw) {
+    std::Provider<int> makeSomething(bool sw) {
         if (sw) {
             // getTicks is a function that returns a value by the time
             // This value changes, it's okay to return a function
